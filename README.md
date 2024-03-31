@@ -25,7 +25,7 @@
           - WorkingOnIt.html - The working on it page.
      - Photos - The photos folder is where all the photos are stored.
      - 2 files
-     - README!IMPORTANT - This file.
+     - README.md- This file.
      - style.css - The css file for the project.
 FUN FACTS!!
 - this project has a Total of : 
