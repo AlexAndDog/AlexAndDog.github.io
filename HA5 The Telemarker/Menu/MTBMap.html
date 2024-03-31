@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Telemarker</title>
+    <link rel="icon" type="image/x-icon" href="../Photos/Logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Sen:wght@400..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+<header>
+    <div class="company-box">
+        <a href="Home.html"><img class="logo" src="../Photos/Logo.png" alt="Logo" height="120px" width="200px"> </a>
+        <h1 class="name">The Telemarker</h1>
+    </div>
+    <ul>
+        <li><a href="About.html">About Me</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Maps</a>
+            <div class="dropdown-content" style="float:right;">
+                <a href="index.html">Ski Resorts</a>
+                <a href="MTBMap.html">MTB Map</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Skiing</a>
+            <div class="dropdown-content" style="float:right;">
+                <a href="Stats/SkiStats.html">Stats</a>
+                <a href="BaseArcticles/SkiArticles.html">Articles</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Mountain Biking</a>
+            <div class="dropdown-content" style="float:right;">
+                <a href="Stats/MTB stats.html">Stats</a>
+                <a href="BaseArcticles/MTBArticles.html">Articles</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Climbing</a>
+            <div class="dropdown-content" style="float:right;">
+                <a href="BaseArcticles\ClimbingArticles.html">Articles</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Camping</a>
+            <div class="dropdown-content" style="float:right;">
+                <a href="BaseArcticles\CampingArticles.html">Articles</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Hiking</a>
+            <div class="dropdown-content" style="float:right;">
+                <a href="BaseArcticles/HikingArticlesHiking.html">Articles</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Credits</a>
+            <div class="dropdown-content" style="float:right;">
+                <a href="Credits/Credits.html">Photo</a>
+                <a href="Credits/CodeCredits.html">Code</a>
+                <a href="Credits/Links.html">Other Links</a>
+            </div>
+        </li>
+    </ul>
+
+</header>
+
+
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../data/line.js"></script>
+    <script src="../data/point.js"></script>
+    <script src="../data/polygon.js"></script>
+    <script src="../data/nepaldata.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="../data/Regions.js"></script>
+    <script>
+        /*===================================================
+                          OSM  LAYER               
+        ===================================================*/
+
+        var map = L.map('map').setView([51, -127.6476], 5.5);
+        var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        });
+        osm.addTo(map);
+
+        /*===================================================
+                              MARKER               
+        ===================================================*/
+
+        var singleMarker = L.marker([49.382602, -123.056824]);
+        singleMarker.addTo(map);
+        var popup = singleMarker.bindPopup('Mount Fromme Mountain Biking <a href="https://nsmba.ca/" target="_blank"></a>')
+        popup.addTo(map);
+
+        var seymourMountainMarker = L.marker([49.359346, -122.958641]);
+        seymourMountainMarker.addTo(map);
+        var seymourMountainPopup = seymourMountainMarker.bindPopup('Seymour Mountain <a href="https://nsmba.ca/" target="_blank">Website</a>');
+        seymourMountainPopup.addTo(map);
+
+        var cypressMountainMarker = L.marker([49.3961, -123.2026]);
+        cypressMountainMarker.addTo(map);
+        var cypressMountainPopup = cypressMountainMarker.bindPopup('Cypress Mountain <a href="https://www.nsmba.ca/" target="_blank">Website</a>');
+        cypressMountainPopup.addTo(map);
+
+        var whistlerBikeParkMarker = L.marker([50.1163, -122.9574]);
+        whistlerBikeParkMarker.addTo(map);
+        var whistlerBikeParkPopup = whistlerBikeParkMarker.bindPopup('Whistler Bike Park <a href="https://www.whistlerblackcomb.com/explore-the-resort/activities-and-events/summer-activities/bike-park" target="_blank">Website</a>');
+        whistlerBikeParkPopup.addTo(map);
+
+        var sunPeaksBikeParkMarker = L.marker([50.8849, -119.8852]);
+        sunPeaksBikeParkMarker.addTo(map);
+        var sunPeaksBikeParkPopup = sunPeaksBikeParkMarker.bindPopup('Sun Peaks Bike Park <a href="https://www.sunpeaksresort.com/summer-activities/bike-park" target="_blank">Website</a>');
+        sunPeaksBikeParkPopup.addTo(map);
+
+        var kickingHorseBikeParkMarker = L.marker([51.2972, -117.0326]);
+        kickingHorseBikeParkMarker.addTo(map);
+        var kickingHorseBikeParkPopup = kickingHorseBikeParkMarker.bindPopup('Kicking Horse Bike Park <a href="https://kickinghorseresort.com/summer/bike-park/" target="_blank">Website</a>');
+        kickingHorseBikeParkPopup.addTo(map);
+
+        var squamishMarker = L.marker([49.7016, -123.1552]);
+        squamishMarker.addTo(map);
+        var squamishPopup = squamishMarker.bindPopup('Squamish <a href="https://www.squamish.ca/" target="_blank">Website</a>');
+        squamishPopup.addTo(map);
+
+        var fernieBikeParkMarker = L.marker([49.5044, -115.0624]);
+        fernieBikeParkMarker.addTo(map);
+        var fernieBikeParkPopup = fernieBikeParkMarker.bindPopup('Fernie Bike Park <a href="https://skifernie.com/summer/bike-park/" target="_blank">Website</a>');
+        fernieBikeParkPopup.addTo(map);
+
+        var bigWhiteBikeParkMarker = L.marker([49.7403, -118.9266]);
+        bigWhiteBikeParkMarker.addTo(map);
+        var bigWhiteBikeParkPopup = bigWhiteBikeParkMarker.bindPopup('Big White Bike Park <a href="https://www.bigwhite.com/summer/mountain-biking" target="_blank">Website</a>');
+        bigWhiteBikeParkPopup.addTo(map);
+
+        var silverStarBikeParkMarker = L.marker([50.3569, -119.0724]);
+        silverStarBikeParkMarker.addTo(map);
+        var silverStarBikeParkPopup = silverStarBikeParkMarker.bindPopup('SilverStar Bike Park <a href="https://www.skisilverstar.com/summer/mountain-biking/" target="_blank">Website</a>');
+        silverStarBikeParkPopup.addTo(map);
+
+        var revelstokeBikeParkMarker = L.marker([50.9981, -118.1950]);
+        revelstokeBikeParkMarker.addTo(map);
+        var revelstokeBikeParkPopup = revelstokeBikeParkMarker.bindPopup('Revelstoke Bike Park <a href="https://www.revelstokemountainresort.com/summer/bike-park" target="_blank">Website</a>');
+        revelstokeBikeParkPopup.addTo(map);
+
+        var kamloopsBikeRanchMarker = L.marker([50.6745, -120.3660], { icon: L.icon({ iconUrl: '../images/red-marker.png', iconSize: [20, 20.5] }) });
+        kamloopsBikeRanchMarker.addTo(map);
+        var kamloopsBikeRanchPopup = kamloopsBikeRanchMarker.bindPopup('Kamloops Bike Ranch');
+        kamloopsBikeRanchPopup.addTo(map);
+
+        var cumberlandMarker = L.marker([49.6157, -125.0305], { icon: L.icon({ iconUrl: '../images/red-marker.png', iconSize: [20, 20.5] }) });
+        cumberlandMarker.addTo(map);
+        var cumberlandPopup = cumberlandMarker.bindPopup('Cumberland Biking');
+        cumberlandPopup.addTo(map);
+
+        var coastGravityParkMarker = L.marker([49.3157, -123.0805], { icon: L.icon({ iconUrl: '../images/red-marker.png', iconSize: [20, 20.5] }) });
+        coastGravityParkMarker.addTo(map);
+        var coastGravityParkPopup = coastGravityParkMarker.bindPopup('Coast Gravity Park');
+        coastGravityParkPopup.addTo(map);
+
+        var ironMountainMarker = L.marker([49.1234, -123.4567], { icon: L.icon({ iconUrl: '../images/red-marker.png', iconSize: [20, 20.5] }) });
+        ironMountainMarker.addTo(map);
+        var ironMountainPopup = ironMountainMarker.bindPopup('Iron Mountain');
+        ironMountainPopup.addTo(map);
+
+        var mountWashingtonMarker = L.marker([48.7947, -123.5022]);
+        mountWashingtonMarker.addTo(map);
+        var mountWashingtonPopup = mountWashingtonMarker.bindPopup('Mount Washington <a href="https://www.mountwashington.ca/" target="_blank">Website</a>');
+        mountWashingtonPopup.addTo(map);
+
+        var redMountainMarker = L.marker([49.10552, -117.84628]);
+        redMountainMarker.addTo(map);
+        var redMountainPopup = redMountainMarker.bindPopup('Red Mountain');
+        redMountainPopup.addTo(map);
+
+        var sumasMountainMarker = L.marker([49.0500, -122.2500], { icon: L.icon({ iconUrl: '../images/red-marker.png', iconSize: [20, 20.5] }) });
+        sumasMountainMarker.addTo(map);
+        var sumasMountainPopup = sumasMountainMarker.bindPopup('Sumas Mountain BC');
+        sumasMountainPopup.addTo(map);
+
+
+        /*===================================================
+                             TILE LAYER               
+        ===================================================*/
+
+        var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 19,
+            opacity: 0.5
+        });
+        CartoDB_DarkMatter.addTo(map);
+
+        // Google Map Layer
+
+        googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            maxZoom: 20,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+            opacity: 0.5
+
+        });
+        googleStreets.addTo(map);
+
+        // Satelite Layer
+        googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            maxZoom: 20,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+            opacity: 0.5
+
+        });
+        googleSat.addTo(map);
+
+        var Stamen_Watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            subdomains: 'abcd',
+            minZoom: 1,
+            maxZoom: 16,
+            ext: 'jpg',
+            opacity: 0.5
+
+        });
+        Stamen_Watercolor.addTo(map);
+
+
+        /*===================================================
+                              GEOJSON               
+        ===================================================*/
+
+        var linedata = L.geoJSON(lineJSON).addTo(map);
+        var pointdata = L.geoJSON(pointJSON).addTo(map);
+        var polygondata = L.geoJSON(polygonJSON, {
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b>This is a </b>' + feature.properties.name)
+            },
+            style: {
+                fillColor: 'red',
+                fillOpacity: 1,
+                color: 'green'
+            }
+        }).addTo(map);
+
+        /*===================================================
+                              LAYER CONTROL               
+        ===================================================*/
+
+        var baseLayers = {
+            "Satellite": googleSat,
+            "Google Map": googleStreets,
+            "Water Color": Stamen_Watercolor,
+            "OpenStreetMap": osm,
+        };
+
+        var overlays = {
+            "Marker": singleMarker,
+            "PointData": pointdata,
+            "LineData": linedata,
+            "PolygonData": polygondata
+        };
+
+        L.control.layers(baseLayers, overlays).addTo(map);
+
+
+        /*===================================================
+                              SEARCH BUTTON               
+        ===================================================*/
+
+        L.Control.geocoder().addTo(map);
+
+
+        /*===================================================
+                              Choropleth Map               
+        ===================================================*/
+
+        L.geoJSON(statesData).addTo(map);
+
+
+        function getColor(d) {
+            return d > 1000 ? '#1c0b30' :
+                d > 500 ? '#5775ad' :
+                    d > 200 ? '#1b5628' :
+                        d > 150 ? '#3a503f' :
+                            d > 100 ? '#3a6e45' :
+                                d > 50 ? '#28524c' :
+                                    d > 20 ? '#671ac6' :
+                                        d > 10 ? '#00ffd9' :
+                                            '#948c9e';
+        }
+
+        function style(feature) {
+            return {
+                fillColor: getColor(feature.properties.density),
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        }
+
+        L.geoJson(statesData, { style: style }).addTo(map);
+
+        function highlightFeature(e) {
+            var layer = e.target;
+
+            layer.setStyle({
+                weight: 5,
+                color: '#666',
+                dashArray: '',
+                fillOpacity: 0.7
+            });
+
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                layer.bringToFront();
+            }
+
+            info.update(layer.feature.properties);
+        }
+
+        function resetHighlight(e) {
+            geojson.resetStyle(e.target);
+            info.update();
+        }
+
+        var geojson;
+        // ... our listeners
+        geojson = L.geoJson(statesData);
+
+        function zoomToFeature(e) {
+            map.fitBounds(e.target.getBounds());
+        }
+
+        function onEachFeature(feature, layer) {
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: function (e) {
+                    if (layer.isPopupOpen()) {
+                        layer.closePopup();
+                    } else {
+                        layer.openPopup();
+                    }
+                }
+            });
+        }
+
+        geojson = L.geoJson(statesData, {
+            style: style,
+            onEachFeature: onEachFeature
+        }).addTo(map);
+
+        var info = L.control();
+
+        info.onAdd = function (map) {
+            this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+            this.update();
+            return this._div;
+        };
+
+        // method that we will use to update the control based on feature properties passed
+        info.update = function (props) {
+            this._div.innerHTML = '<h4>Region</h4>' + (props ?
+                '<b>' + props.name + '</b><br />'
+                : 'Hover over a Region');
+        };
+
+        function closeMessage() {
+            info.update();
+        }
+
+        info.addTo(map);
+    </script>
+</body>
+<div class="footer">
+    <div class="footer-content-right">
+        <a href="https://github.com/AlexAndDog" target="_blank"><img src="../Photos/githublogo.png" class="icon-style"
+                alt="Github icon"></a>
+    </div>
+</div>
+
+</html>

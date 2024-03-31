@@ -1,0 +1,1143 @@
+.logo:hover {
+    transform: scale(1.1);
+    animation-iteration-count: infinite;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    font-family: "Sen", sans-serif;
+    font-weight: light;
+    font-style: normal;
+    font-size: larger;
+    height: 100px;
+    display: flex;
+    /* Add this line */
+    justify-content: right;
+    /* Add this line */
+    align-items: center;
+    /* Add this line */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    visibility: visible;
+    z-index: 10000;
+    overflow-x: hidden !important;
+
+}
+
+li {
+    float: right;
+    visibility: visible;
+    z-index: 10000;
+    overflow-x: hidden !important;
+
+}
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+
+}
+
+li a,
+.dropbtn {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    height: auto;
+    justify-content: center;
+    visibility: visible;
+    z-index: 10000;
+    overflow-x: auto;
+    /* Add this line */
+    white-space: nowrap;
+    overflow-x: hidden !important;
+
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #1c1c1c;
+    visibility: visible;
+    z-index: 10000;
+    text-align: center;
+    overflow-x: hidden !important;
+
+}
+
+li.dropdown {
+    display: inline-block;
+    visibility: visible;
+    z-index: 10000;
+    overflow-x: hidden !important;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1c1c1c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white;
+    visibility: visible;
+    text-align: center;
+    z-index: 10000;
+    border-radius: 20px;
+    overflow-x: hidden !important;
+
+}
+
+ul.Climb {
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    columns: 100%;
+    box-shadow: none;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    visibility: visible;
+    z-index: 10000;
+    border-radius: 20px;
+    overflow-x: hidden !important;
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.dropdown-content a:hover {
+    background-color: #ff2929;
+    visibility: visible;
+    z-index: 10000;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    z-index: 10000;
+    border-radius: 20px;
+
+}
+
+.company-box {
+    width: 159px;
+    height: 159px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    padding: 20px;
+    background-color: #ff2929;
+    color: white;
+    text-align: center;
+    font-family: "Tenor Sans", sans-serif !important;
+    font-size: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    line-height: normal;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10000;
+    visibility: visible;
+}
+
+
+
+
+body.home {
+    background-image: url(./Photos/sunwapta-falls-canadian-rockies_0.webp);
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: top;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.about {
+    background-image: url(./Photos/sunrise-moraine-lake-canada_0.webp);
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: top;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.credits {
+    background-image: url(./Photos/71572_4x3.avif);
+    background-repeat: repeat-x;
+    background-size: 80%;
+    background-position: top;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: black;
+}
+
+body.LinkArticles {
+    background-image: url(./Photos/71572_4x3.avif);
+    background-repeat: repeat-x;
+    background-size: 80%;
+    background-position: top;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: black;
+    text-align: center;
+}
+
+.LinkArticles h2 {
+    font-family: "Sen", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.TextBoxCredits {
+    text-align: center;
+}
+
+body.Oops h2 {
+    font-family: "Sen", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+    text-wrap: wrap;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 200px !important;
+    transform: translate(-50%, -50%);
+    font-variation-settings: 'FILL' 0,
+        'wght' 700,
+        'GRAD' 400,
+        /* Increase the value to make the symbol larger */
+        'opsz' 200;
+}
+
+.TextBox {
+    width: 1004px;
+    height: 950px;
+    position: absolute;
+    background-color: #1c1c1c;
+    margin: 300px 250px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.clean {
+    margin-left: 0px;
+    margin-right: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+    margin-top: 450px;
+    z-index: -1;
+}
+
+.cleaning {
+    margin-left: 0px;
+    margin-right: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 2300px;
+    margin-top: 450px;
+    z-index: -1;
+}
+
+.TextBox1 {
+    width: 1004px;
+    height: 1000px;
+    position: absolute;
+    background-color: #1c1c1c;
+    margin: 300px 250px;
+    text-align: center;
+    color: white;
+}
+
+.TextBoxLink {
+    width: 1004px;
+    height: 950px;
+    position: absolute;
+    background-color: #1c1c1c;
+    margin: 300px 250px;
+    text-align: center;
+    color: white;
+}
+
+.TextBoxLink img #Ski {
+    position: absolute;
+    margin: -25px -900px;
+    text-align: left;
+    z-index: 1;
+}
+
+.TextBoxLink img #MTB {
+    position: absolute;
+    margin: -25px -450px;
+    text-align: left;
+    z-index: 1;
+}
+
+.TextBox h1 {
+    font-size: 50px;
+    margin: 20px 20px;
+    font-weight: 600;
+    font-style: light;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    padding-left: 400px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.TextBox h4 {
+    font-size: 30px;
+    margin: 20px 20px;
+    font-weight: 300;
+    font-style: light;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    padding-left: 400px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.TextBox p {
+    font-size: 19px;
+    margin: 20px 20px;
+    text-align: left;
+    font-weight: 100;
+    font-style: light;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    padding-left: 400px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.TextBoxCredits {
+    width: 1004px;
+    height: 2500px;
+    position: absolute;
+    background-color: #1c1c1c;
+    margin: 300px 250px;
+    text-align: center;
+    color: white;
+}
+
+.TextBoxCodeCredits {
+    width: 1004px;
+    height: 840px;
+    position: absolute;
+    background-color: #1c1c1c;
+    margin: 300px 250px;
+    text-align: center;
+    color: white;
+}
+
+.TextBoxCredits h1 {
+    font-size: 50px;
+    margin: 20px 20px;
+    font-weight: 600;
+    font-style: light;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    padding-left: 400px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.TextBoxLinks h1 {
+    font-family: "Sen", sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.TextBoxCredits h4 {
+    font-size: 30px;
+    margin: 20px 20px;
+    font-weight: 300;
+    font-style: light;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    padding-left: 400px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.TextBoxCredits p {
+    font-size: 19px;
+    margin: 20px 20px;
+    text-align: left;
+    font-weight: 100;
+    font-style: light;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    padding-left: 400px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.Image {
+    width: 400px;
+    height: 900px;
+    position: absolute;
+    margin: 150px 125px;
+    text-align: left;
+    z-index: 1;
+}
+
+.SkiImage {
+    width: 400px;
+    height: 843px;
+    position: absolute;
+    margin: 150px 100px;
+    text-align: left;
+    z-index: 1;
+}
+
+.ArticleBox h3 {
+    font-family: "Sen", sans-serif;
+    font-weight: light;
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.whitebox {
+    width: 100%;
+    height: 99px;
+    position: absolute;
+    background-color: white;
+    margin: 0px 0px;
+    text-align: left;
+    z-index: 1;
+}
+
+.SkiingImage {
+    width: 400px;
+    height: 843px;
+    position: absolute;
+    margin: 150px 125px;
+    text-align: left;
+    z-index: 1;
+}
+
+.CampImage {
+    width: 400px;
+    height: 1300px;
+    position: absolute;
+    margin: -1170px 0.1px;
+    text-align: left;
+    z-index: 1;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body.credits h2 {
+    font-family: "Sen", sans-serif;
+    font-weight: light;
+    font-style: normal;
+    font-size: 50px;
+    color: black !important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+title h2 {
+    margin-top: 0;
+}
+
+h2.w {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+body h2 {
+    font-family: "Sen", sans-serif;
+    font-weight: light;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body h3 {
+    font-family: "Sen", sans-serif;
+    font-weight: light;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ArticleBox {
+    width: 1004px;
+    height: 17000px;
+    position: absolute;
+    background-color: #f1f0f0;
+    margin: 0px 250px;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ArticleBox1 {
+    width: 1004px;
+    height: 6300px;
+    position: absolute;
+    background-color: #f1f0f0;
+    margin: 0px 250px;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+
+}
+
+.ArticleBox2 {
+    width: 1004px;
+    height: 12000px;
+    position: absolute;
+    background-color: #f1f0f0;
+    margin: 0px 250px;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+}
+
+.ArticleBox3 {
+    width: 1004px;
+    height: auto;
+    position: absolute;
+    background-color: #f1f0f0;
+    margin: 0px 250px;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    z-index: 50;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+}
+
+.ArticleBoxText {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 150px;
+    text-align: left;
+}
+
+.AboutMe h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    /* Adjusted margin-top value */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: center;
+    width: 90%;
+    text-shadow: #1c1c1c;
+    /* Updated width */
+}
+
+.AboutMe h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: center;
+    width: 90%;
+    text-shadow: #1c1c1c;
+    /* Updated width */
+}
+
+.AboutMe p {
+    font-size: 19px;
+    margin: 20px 20px;
+    text-align: left;
+    font-weight: 100;
+    font-style: light;
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    color: whitesmoke;
+    padding-left: 400px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    text-wrap: wrap;
+    text-align: left;
+    text-shadow: #1c1c1c;
+    line-height: 1.5;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.footer {
+    box-shadow: 0px -8px 16px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #a4a9b2;
+    z-index: 100000000;
+}
+
+.footer-text-left {
+    font-size: 25px;
+    padding-left: 40px;
+    float: left;
+    word-spacing: 20px;
+    align-items: left;
+    margin-left: 0;
+}
+
+a.menu:hover {
+    background-color: #D3D3D3;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.footer-content-right {
+    padding-right: 40px;
+    margin-top: 20px;
+    float: right;
+}
+
+.icon-style {
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.icon-style:hover {
+    transform: scale(1.1);
+    background-color: lightpink;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+    margin: 0;
+}
+
+.sausage {
+    overflow-x: hidden;
+}
+
+html.stats {
+    overflow-x: scroll
+}
+
+h3 {
+    font-size: 24px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+p {
+    font-size: 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.articles h1,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: black;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+a {
+    color: inherit
+}
+
+.w3-btn,
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.w3-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.w3-container:after,
+.w3-container:before,
+.w3-panel:after,
+.w3-panel:before,
+.w3-row:after,
+.w3-row:before,
+.w3-row-padding:after,
+.w3-row-padding:before,
+.w3-cell-row:before,
+.w3-cell-row:after,
+.w3-clear:after,
+.w3-clear:before,
+.w3-bar:before,
+.w3-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media (min-width:993px) {
+    .w3-col.l1 {
+        width: 8.33333%
+    }
+
+    .w3-col.l2 {
+        width: 16.66666%
+    }
+
+    .w3-col.l3 {
+        width: 24.99999%
+    }
+
+    .w3-col.l4 {
+        width: 33.33333%
+    }
+
+    .w3-col.l5 {
+        width: 41.66666%
+    }
+
+    .w3-col.l6 {
+        width: 49.99999%
+    }
+
+    .w3-col.l7 {
+        width: 58.33333%
+    }
+
+    .w3-col.l8 {
+        width: 66.66666%
+    }
+
+    .w3-col.l9 {
+        width: 74.99999%
+    }
+
+    .w3-col.l10 {
+        width: 83.33333%
+    }
+
+    .w3-col.l11 {
+        width: 91.66666%
+    }
+
+    .w3-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.w3-content,
+.w3-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.w3-auto {
+    max-width: 1140px
+}
+
+.w3-container,
+.w3-panel {
+    padding: 0.01em 16px;
+    margin: 0 0 16px 0;
+}
+
+.w3-card,
+.w3-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 10px;
+}
+
+.w3-card-4,
+.w3-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -200px;
+
+}
+
+.w3-card-5,
+.w3-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+
+}
+
+.w3-spin {
+    animation: w3-spin 2s infinite linear
+}
+
+@keyframes w3-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.w3-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.w3-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.w3-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.w3-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.w3-animate-input:focus {
+    width: 100% !important
+}
+
+.w3-opacity,
+.w3-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.w3-opacity-off,
+.w3-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.w3-opacity-max {
+    opacity: 0.25
+}
+
+.w3-opacity-min {
+    opacity: 0.75
+}
+
+.w3-border-0 {
+    border: 0 !important
+}
+
+.w3-border {
+    border: 1px solid #ccc !important
+}
+
+.w3-padding-small {
+    padding: 4px 8px !important
+}
+
+
+.w3-padding-large {
+    padding: 12px 24px !important
+}
+
+.w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
