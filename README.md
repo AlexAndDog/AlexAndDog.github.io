@@ -1,5 +1,5 @@
 # IT-10
-- In this folder, you will find: 
+- In folder, you will find: 
 - 5 folders
      - Data - all the cooridnates of the poly(and multi)gons on the map. 
            This folder also includes more javascript files that I used to create the map. 
@@ -25,8 +25,8 @@
           - WorkingOnIt.html - The working on it page.
      - Photos - The photos folder is where all the photos are stored.
      - 2 files
-     - README.md- This file.
+     - README!IMPORTANT - This file.
      - style.css - The css file for the project.
 FUN FACTS!!
-- this project has a Total of : 
+- Total : 43 files,  51070 codes, 7239 comments, 5946 blanks, all 64255 lines
 - This project has a custom scroll bar!
