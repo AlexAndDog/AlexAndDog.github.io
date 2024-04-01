@@ -20,7 +20,7 @@
           - Home.html - The home page, where you can find the map and the menu.
           - index.html - The ski map.
           - MTBMap.html - The mountain bike map.
-          The next two files are unused, however they are soully there for testing and are not linked to the menu.
+          - The next two files are unused, however they are soully there for testing and are not linked to the menu.
           - Test.html - The test page.
           - WorkingOnIt.html - The working on it page.
      - Photos - The photos folder is where all the photos are stored.
