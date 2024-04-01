@@ -264,19 +264,29 @@ body.Oops h2 {
     z-index: -1;
 }
 
+.clean1 {
+    margin-left: 0px;
+    margin-right: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 875px;
+    margin-top: 450px;
+    z-index: -1;
+}
+
 .cleaning {
     margin-left: 0px;
     margin-right: 100px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    height: 2300px;
+    height: 2400px;
     margin-top: 450px;
     z-index: -1;
 }
 
 .TextBox1 {
     width: 1004px;
-    height: 1000px;
+    height: 1100px;
     position: absolute;
     background-color: #1c1c1c;
     margin: 300px 250px;
@@ -359,7 +369,7 @@ body.Oops h2 {
 
 .TextBoxCredits {
     width: 1004px;
-    height: 2500px;
+    height: 2600px;
     position: absolute;
     background-color: #1c1c1c;
     margin: 300px 250px;
@@ -435,7 +445,7 @@ body.Oops h2 {
 
 .Image {
     width: 400px;
-    height: 900px;
+    height: 1025px;
     position: absolute;
     margin: 150px 125px;
     text-align: left;
@@ -444,9 +454,9 @@ body.Oops h2 {
 
 .SkiImage {
     width: 400px;
-    height: 843px;
+    height: 925px;
     position: absolute;
-    margin: 150px 100px;
+    margin: 150px 125px;
     text-align: left;
     z-index: 1;
 }
