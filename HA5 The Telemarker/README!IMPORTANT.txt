@@ -1,0 +1,32 @@
+Hi Ms. Winstone! This is my IT 10 H5 project. I hope you like it!
+- In folder (I know it's big), you will find: 
+- 5 folders
+     - Data - all the cooridnates of the poly(and multi)gons on the map. 
+           This folder also includes more javascript files that I used to create the map. 
+          (I used the Leaflet library and a template from github. The credits are in the code credits file).
+     - Images - The images for the map (from the leaflet library).  
+     - Leaflet - The leaflet library.  
+     - Menu - The menu folder is the control centre of my project. it includes all the sites
+          - Articles - The articles folder includes all the articles that I wrote for the project. 
+              Which you can find by dropping any of the sport menus down and clicking on article, 
+              then you chose the article of your liking.
+          - BaseArticles - The pages where you choose what article you want to read.
+          - Credits - The drop down with all the credit pages, including the code credits, photo credits, and useful links. 
+              (the article links can be found in the articles).
+          - Stats - This folder contains two pages, (these are the longest files due to the tables). 
+              The stats I have made over the years.
+          - About.html - The about page, where you can find out more about me and the project. 
+              This is where my core competency is.
+          - Home.html - The home page, where you can find the map and the menu.
+          - index.html - The ski map.
+          - MTBMap.html - The mountain bike map.
+          The next two files are unused, however they are soully there for testing and are not linked to the menu.
+          - Test.html - The test page.
+          - WorkingOnIt.html - The working on it page.
+     - Photos - The photos folder is where all the photos are stored.
+     - 2 files
+     - README!IMPORTANT - This file.
+     - style.css - The css file for the project.
+FUN FACTS!!
+- Total : 43 files,  51079 codes, 7239 comments, 5947 blanks, all 64265 lines
+- This project has a custom scroll bar!

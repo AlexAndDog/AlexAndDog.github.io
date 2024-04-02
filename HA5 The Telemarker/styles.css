@@ -23,7 +23,6 @@ ul {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     visibility: visible;
     z-index: 10000;
-    overflow-x: hidden !important;
 
 }
 
@@ -31,14 +30,12 @@ li {
     float: right;
     visibility: visible;
     z-index: 10000;
-    overflow-x: hidden !important;
 }
 
 body,
 ul {
     margin: 0;
     padding: 0;
-    overflow-x: hidden !important;
 }
 
 li a,
@@ -57,8 +54,6 @@ li a,
     overflow-x: auto;
     /* Add this line */
     white-space: nowrap;
-    overflow-x: hidden !important;
-
 }
 
 li a:hover,
@@ -67,16 +62,12 @@ li a:hover,
     visibility: visible;
     z-index: 10000;
     text-align: center;
-    overflow-x: hidden !important;
-
 }
 
 li.dropdown {
     display: inline-block;
     visibility: visible;
     z-index: 10000;
-    overflow-x: hidden !important;
-
 }
 
 .dropdown-content {
@@ -91,8 +82,6 @@ li.dropdown {
     text-align: center;
     z-index: 10000;
     border-radius: 20px;
-    overflow-x: hidden !important;
-
 }
 
 ul.Climb {
@@ -113,8 +102,6 @@ ul.Climb {
     visibility: visible;
     z-index: 10000;
     border-radius: 20px;
-    overflow-x: hidden !important;
-
 }
 
 .material-symbols-outlined {
@@ -243,6 +230,7 @@ body.Oops h2 {
         'opsz' 200;
 }
 
+
 .TextBox {
     width: 1004px;
     height: 950px;
@@ -279,7 +267,7 @@ body.Oops h2 {
     margin-right: 100px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    height: 2400px;
+    height: 200px;
     margin-top: 450px;
     z-index: -1;
 }
